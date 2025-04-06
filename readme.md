@@ -68,7 +68,7 @@ Home to Calendar to view historic data
 ## Wireframes
 
 [Add picture of your hand sketched wireframes in this section]
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+<img src="/low-fidelity.jpg" width=600>
 
 
 ## Schema 
