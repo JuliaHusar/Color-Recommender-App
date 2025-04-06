@@ -87,7 +87,7 @@ Home to Calendar to view historic data
 
 ## Sprints
 
-[ ] **Sprint 1:** Setup navigation for the application, and the basic color scheme of the app. Import any necessary icons, elements, and work on the UI of this app.
-[ ] **Sprint 2:** Setup integration with User's LastFM, Spotify, or Apple Music account, and then construct algorithm to define user's "taste"
-[ ] **Sprint 3:** Connect client iOS app to color matcher endpoint, and write logic to send post request of image + get request with data from endpoint.
-[ ] **Sprint 4:** Display whatever data is received from server, and allow user to save an image every single day into local storage
+[ ] **Sprint 1:** Setup navigation for the application, and the basic color scheme of the app. Import any necessary icons, elements, and work on the UI of this app.  
+[ ] **Sprint 2:** Setup integration with User's LastFM, Spotify, or Apple Music account, and then construct algorithm to define user's "taste"  
+[ ] **Sprint 3:** Connect client iOS app to color matcher endpoint, and write logic to send post request of image + get request with data from endpoint.  
+[ ] **Sprint 4:** Display whatever data is received from server, and allow user to save an image every single day into local storage  
