@@ -56,14 +56,14 @@ Original App Design Project - README Template
 
 **Flow Navigation** (Screen to Screen)
 
-- [ ] Home
+- [X] Home
 * Home to camera to take a picture
 * ...
-- [ ] Camera
+- [X] Camera
 * Camera to home to view results
 * ...
-- [ ] Calendar
-Home to Calendar to view historic data
+- [X] Details
+Home to Detail View to view details about picture
 
 ## Wireframes
 
@@ -76,7 +76,7 @@ Home to Calendar to view historic data
 [This section will be completed in Unit 9]
 
 ### Models
-
+![recording](https://github.com/JuliaHusar/Color-Recommender-App/blob/main/recording.gif?raw=true)
 [Add table of models]
 
 ### Networking
@@ -87,7 +87,7 @@ Home to Calendar to view historic data
 
 ## Sprints
 
-[ ] **Sprint 1:** Setup navigation for the application, and the basic color scheme of the app. Import any necessary icons, elements, and work on the UI of this app.  
-[ ] **Sprint 2:** Setup integration with User's LastFM, Spotify, or Apple Music account, and then construct algorithm to define user's "taste"  
-[ ] **Sprint 3:** Connect client iOS app to color matcher endpoint, and write logic to send post request of image + get request with data from endpoint.  
-[ ] **Sprint 4:** Display whatever data is received from server, and allow user to save an image every single day into local storage  
+[X] **Sprint 1:** Setup navigation for the application, and the basic color scheme of the app. Import any necessary icons, elements, and work on the UI of this app.  
+[X] **Sprint 2:** Setup integration with User's LastFM, Spotify, or Apple Music account, and then construct algorithm to define user's "taste"  
+[X] **Sprint 3:** Connect client iOS app to color matcher endpoint, and write logic to send post request of image + get request with data from endpoint.  
+[X] **Sprint 4:** Display whatever data is received from server, and allow user to save an image every single day into local storage  
