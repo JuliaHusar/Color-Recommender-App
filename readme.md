@@ -73,18 +73,67 @@ Home to Detail View to view details about picture
 
 ## Schema 
 
-[This section will be completed in Unit 9]
 
 ### Models
 ![recording](https://github.com/JuliaHusar/Color-Recommender-App/blob/main/recording.gif?raw=true)
-[Add table of models]
+struct LastFMResponse
+| Name     | Type |
+| -------- | ------- |
+| dominant_colors_hsv  | [[Double]]    |
+| dominant_colors_rgb  | [[Int]]       |
+| top_ten_albums       | TopTenAlbums  |
+| error                | String        |
+
+struct TopTenAlbums
+| Name     | Type |
+| -------- | ------- |
+| topalbums  | AlbumsInfo    |
+
+struct Album
+| Name     | Type |
+| -------- | -------   |
+| name   | String      |
+| artist | Artist      |
+| image  | LastFMImage |
+
+struct Artist
+| Name     | Type |
+| -------- | ------- |
+| mbid  | String  |
+| name  | String  |
+| url   | String  |
+
+struct LastFMImage
+| Name     | Type |
+| -------- | ------- |
+| text  | String |
+| url   | String |
+| size  | String |
+
+
+****
 
 ### Networking
 
 - [Add list of network requests by screen ]
+  **HomeViewController**
+  - post(image) -> httpbody.response = HSV Color Values, RGB Color Values, LastFMAPI JSON
+  **SignUpOneController
+   - post (username, password) -> httpbody.response = success
 - [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
-
+   if (200...299).contains(httpResponse.statusCode) {
+                    do{
+                        let decoder = JSONDecoder()
+                        let lastFMResponse = try decoder.decode(LastFMResponse.self, from: data)
+                        print("LastFM Response Object: \(lastFMResponse)")
+                        completion(lastFMResponse)
+                    } catch {
+                        print(error)
+                        completion(nil)
+                    }
+                } 
+**Endpoint**
+  https://colormatcherflask.onrender.com/process-image
 ## Sprints
 
 [X] **Sprint 1:** Setup navigation for the application, and the basic color scheme of the app. Import any necessary icons, elements, and work on the UI of this app.  
